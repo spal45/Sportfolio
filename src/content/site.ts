@@ -6,8 +6,8 @@ export const site = {
   name: "Subhankar Pal",
   firstName: "Subhankar",
   initials: "SP",
-  title: "Software Developer",
-  role: "Backend & Full-Stack Developer",
+  title: "Backend-Focused Full-Stack Developer",
+  role: "Backend-Focused Full-Stack Developer",
   location: "West Bengal, India",
   email: "subhankar.pal45@gmail.com",
   phone: "+91 9123635311",
@@ -35,11 +35,11 @@ export const hero = {
   missionLabel: "The Mission",
   mission: "Let's build systems that hold up in production.",
   specializationLabel: "Core Specialization",
-  specialization: ["Software Developer", "& Backend Engineer"],
+  specialization: ["Backend-Focused", "Full-Stack Developer"],
   focusLabel: "Engineering Focus",
-  focus: "Building scalable healthcare & e-commerce systems",
+  focus: "Building scalable backend systems for healthcare, fintech, and AI",
   focusSub:
-    "HIPAA-aligned platforms, MongoDB aggregation pipelines, secure payment gateways, and asynchronous AWS workflows.",
+    "Async architectures, generative-AI integrations, secure payment systems, and cloud-native infrastructure — production-tested, not theoretical.",
   scrollCue: "Scroll down to explore",
 } as const;
 
@@ -47,9 +47,9 @@ export const pitch = {
   label: "The Pitch",
   greeting: "Hello, Recruiter.",
   headline: "Let me show you why I could be your next developer.",
-  lead: "Not just someone who writes endpoints — a developer who designs data flows, secures payment and health-data workflows, and ships production-ready iterations with an agile team.",
-  role: "Software Developer. Backend-focused. Compliance-aware.",
-  bio: "I have nearly two years of experience building, optimizing and maintaining scalable healthcare and e-commerce applications. I work across Next.js, React, MongoDB and AWS — with a track record in robust backend architecture, complex aggregation pipelines, asynchronous workflows and secure payment integrations under strict compliance standards.",
+  lead: "Not just someone who writes endpoints — a developer who designs data flows, secures payment and sensitive-data workflows, and ships production-ready iterations with an agile team.",
+  role: "Full-Stack Developer. Backend-focused. AI-integrated.",
+  bio: "I have nearly two years of experience shipping production systems across healthcare, fintech, and real-time messaging. I own services end-to-end — schema design, API architecture, generative-AI integrations, queue-backed async workflows, and cloud deployment — with a track record in complex data pipelines and secure payment integrations under strict compliance standards.",
   cardsLabel: "What do I actually bring to the table?",
   cards: [
     {
@@ -65,12 +65,12 @@ export const pitch = {
       body: "PCI-compliant transaction processing with Stripe and the NMI gateway, including tokenization and webhooks.",
     },
     {
-      title: "Compliance-Grade Engineering",
-      body: "HIPAA-aligned workflows, RBAC, and immutable audit trails for protected health information (PHI).",
+      title: "Generative-AI Integrations",
+      body: "OpenAI-powered recommendation pipelines with defensive output handling, JSON-repair, and catalog-based hallucination filtering.",
     },
     {
       title: "Complex Data Pipelines",
-      body: "Advanced MongoDB aggregation pipelines powering reporting, inventory and commission tracking.",
+      body: "Advanced MongoDB aggregation and double-entry ledger pipelines powering reporting, inventory and financial transfers.",
     },
     {
       title: "Asynchronous Workflows",
@@ -97,6 +97,8 @@ export const trackRecord = {
         "Designed granular authentication and role-based access control (RBAC) to secure sensitive workflows.",
         "Engineered optimized backend micro-services and APIs using Next.js API Routes and complex MongoDB aggregation pipelines.",
         "Built telemedicine workflows: online consultations, digital prescriptions and automated medication fulfillment.",
+        "Built an asynchronous generative-AI recommendation engine (OpenAI API) that analyzes patient intake data against clinical/product knowledge to auto-generate structured diagnosis and treatment recommendations for the Patient Folder view.",
+        "Designed defensive AI-output handling — JSON-repair for truncated LLM responses and catalog-based hallucination filtering — with PHI stripped from every payload before it reaches the AI service.",
         "Implemented AWS Lambda jobs for scheduled tasks, dashboard metric sync and transactional email.",
         "Built resilient asynchronous audit-logging pipelines with AWS SQS and S3 to meet governance regulations.",
         "Managed CI/CD via AWS App Runner and CodeBuild, monitoring infrastructure health with CloudWatch.",
@@ -109,6 +111,7 @@ export const trackRecord = {
         "Mongoose",
         "Stripe",
         "NMI",
+        "OpenAI API",
         "AWS Lambda",
         "AWS SQS",
         "AWS S3",
@@ -165,15 +168,37 @@ export const arsenal = {
   label: "Technical Arsenal",
   headline: "My engineering stack.",
   groups: [
-    { label: "Frontend", items: ["React.js (v19)", "Next.js (v15)", "HTML5", "CSS3", "Material UI"] },
-    { label: "Backend & APIs", items: ["Node.js (v22)", "Express.js (v4)", "Next.js API Routes", "REST APIs"] },
-    { label: "Database", items: ["MongoDB (v8)", "PostgreSQL (v17)", "Mongoose ORM", "Aggregation Pipelines"] },
+    { label: "Languages", items: ["TypeScript", "JavaScript"] },
+    { label: "Frontend", items: ["React.js (v19)", "Next.js (v15)", "HTML5", "CSS3", "Tailwind"] },
     {
-      label: "Cloud & Infrastructure",
-      items: ["AWS Lambda", "AWS SQS", "AWS S3", "AWS App Runner", "AWS CodeBuild", "AWS CloudWatch"],
+      label: "Backend & APIs",
+      items: ["Node.js (v22)", "Express.js (v4)", "NestJS", "Next.js API Routes", "REST APIs", "Socket.IO"],
     },
-    { label: "Integrations", items: ["Stripe", "NMI Payment Gateway", "HIPAA Workflows", "Webhooks"] },
-    { label: "Tools", items: ["Git", "GitHub", "Postman", "VS Code"] },
+    {
+      label: "Database",
+      items: ["MongoDB (v8)", "PostgreSQL (v17)", "Mongoose ORM", "Prisma", "Aggregation Pipelines"],
+    },
+    {
+      label: "Cloud & DevOps",
+      items: [
+        "AWS Lambda",
+        "AWS SQS",
+        "AWS S3",
+        "AWS App Runner",
+        "AWS CodeBuild",
+        "AWS CloudWatch",
+        "AWS ECS",
+        "Docker",
+        "GitHub Actions",
+        "Redis",
+        "RabbitMQ",
+      ],
+    },
+    {
+      label: "Integrations",
+      items: ["Stripe", "NMI Payment Gateway", "JWT / Argon2 Auth", "HIPAA-aligned Workflows", "Webhooks", "OpenAI API"],
+    },
+    { label: "Tools", items: ["Git", "GitHub", "Postman", "VS Code", "Claude"] },
   ],
 } as const;
 
@@ -182,13 +207,13 @@ export const philosophy = {
   items: [
     {
       n: "01",
-      title: "Compliance is architecture",
-      body: "In healthcare, security and auditability aren't features bolted on later — they shape the data model from day one.",
+      title: "Security is architecture",
+      body: "In regulated systems — healthcare, payments — security and auditability aren't features bolted on later. They shape the data model from day one.",
     },
     {
       n: "02",
       title: "Data flows are the product",
-      body: "Most real complexity lives in how data moves — aggregation pipelines, queues, webhooks — not in individual endpoints.",
+      body: "Most real complexity lives in how data moves — aggregation pipelines, queues, webhooks, AI pipelines — not in individual endpoints.",
     },
     {
       n: "03",
@@ -209,11 +234,11 @@ export const whyHire = {
   points: [
     {
       title: "I understand the whole system.",
-      body: "Databases, aggregation pipelines, cloud infrastructure, payments, deployment and production reliability.",
+      body: "Databases, aggregation pipelines, cloud infrastructure, payments, AI integrations, and production reliability.",
     },
     {
-      title: "I've worked with regulated systems.",
-      body: "HIPAA-aligned healthcare workflows, PCI-compliant payments, RBAC and immutable audit trails.",
+      title: "I've worked with regulated, high-stakes systems.",
+      body: "HIPAA-aligned healthcare workflows, PCI-compliant payments, and now generative-AI pipelines — all backed by RBAC, audit trails, and hallucination-safe output handling.",
     },
     {
       title: "I take ownership.",
@@ -246,5 +271,5 @@ export const contact = {
   label: "Contact",
   headline: "Let's build something remarkable.",
   blurb:
-    "Have a challenging backend problem, a healthcare or commerce product, or an opportunity worth discussing?",
+    "Have a challenging backend problem, an AI integration, or a product worth building — let's talk.",
 } as const;
